@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Résultat du chiffrement</title>
+  </head>
+  <body>
+    <h1>Message chiffré</h1>
+    <p>Token généré :</p>
+    <pre>{{ token }}</pre>
+    <p>
+      <a href="{{ url_for('encrypt') }}">Chiffrer un autre message</a> | 
+      <a href="{{ url_for('index') }}">Retour à l'accueil</a>
+    </p>
+  </body>
+</html>

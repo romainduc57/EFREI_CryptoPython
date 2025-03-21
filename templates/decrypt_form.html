@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Déchiffrement</title>
+  </head>
+  <body>
+    <h1>Déchiffrer un message</h1>
+    {% if error %}
+      <p style="color:red;">{{ error }}</p>
+    {% endif %}
+    <form method="POST" action="{{ url_for('decrypt') }}">
+      <div>
+        <label for="token">Token :</label>
+        <input type="text" name="token" id="token" required>
+      </div>
+      <div>
+        <label for="password">Mot de passe :</label>
+        <input type="password" name="password" id="password" required>
+      </div>
+      <div>
+        <button type="submit">Déchiffrer</button>
+      </div>
+    </form>
+    <p><a href="{{ url_for('index') }}">Retour à l'accueil</a></p>
+  </body>
+</html>

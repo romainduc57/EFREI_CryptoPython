@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+</head>
+<body>
+    <h1>Bienvenue sur l'application Flask</h1>
+    <ul>
+        <li><a href="/encrypt">Chiffrer un texte</a></li>
+        <li><a href="/decrypt">Déchiffrer un texte</a></li>
+        <li><a href="/contacts">Gérer les contacts</a></li>
+    </ul>
+</body>
+</html>
